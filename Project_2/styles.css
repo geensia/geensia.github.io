@@ -1,0 +1,14 @@
+/* this is for the index */
+body{
+    background: lightblue;
+}
+
+h1 {
+    font-family: "Nerko One", cursive;
+    font-size: 100px;
+}
+
+p {
+    font-family: "Rubik", sans-serif;
+    font-size: 30px;
+}
