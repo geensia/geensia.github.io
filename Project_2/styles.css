@@ -6,9 +6,45 @@ body{
 h1 {
     font-family: "Nerko One", cursive;
     font-size: 100px;
+    text-align: center;
 }
 
-p {
+h3 {
     font-family: "Rubik", sans-serif;
     font-size: 30px;
 }
+
+/* map section 
+------------------------------------------------------------------------*/
+.map {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
+.travel-item {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 20px;
+  justify-content: end;
+}
+
+.travel-options {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Food Section
+------------------------------------------------------------------------*/
+.food-options {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  }
+  
+  /* .food {
+    flex: 33.33%;
+    padding: 5px;
+  } */
