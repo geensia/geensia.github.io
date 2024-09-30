@@ -1,5 +1,11 @@
 /* Global Styles 
 ------------------------------------------------------------------*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
 body{
     margin: 0;
     background-color: #fbfaf3;
@@ -33,7 +39,7 @@ body{
 
 .hero-image{
     background-image: url(Images/XK_Background.png);
-    padding: 300px;
+    padding: 25%;
     color: white;
     background-position: center;
     background-repeat: no-repeat;
