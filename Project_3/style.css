@@ -74,8 +74,9 @@ body{
     }
 
     .shelves-container {
-        grid-template-columns: repeat(2, 1); /*kelsey edit
+        grid-template-columns: repeat(2, 1); /*kelsey edit */
     }
+
 }
 
 
