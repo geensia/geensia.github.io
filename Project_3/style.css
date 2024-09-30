@@ -72,6 +72,10 @@ body{
         float: none;
         text-align: center;
     }
+
+    .shelves-container {
+        grid-template-columns: repeat(2, 1); /*kelsey edit
+    }
 }
 
 
