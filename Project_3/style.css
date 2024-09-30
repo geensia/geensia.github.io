@@ -86,10 +86,11 @@ body{
 }
 
 .quote h1{
-    font-size: 35px;
+    font-size: 45px;
     text-align: center;
     padding: 5% 5%;
-    background-color: blueviolet;
+    background-color:#637a6a;
+    color: white;
 }
 
 .text-wrap{
@@ -105,13 +106,12 @@ body{
 .shelves-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* grid-template-rows: 1 fr 1fr; */
     background-color: #637a6a;
     padding: 10px;
 }
 
 .shelves-item{
-    background-color: pink;
+    background-color: #EADDCA;
     border: 1px solid yellow;
     padding: 20px;
     font-size: 30px;
@@ -132,13 +132,14 @@ body{
 .container{
     width: 50%;
     margin: 0 auto;
-    border: 5px solid black;
+    /* border: 5px solid black; */
     overflow: hidden;
 }
 
 .sign{
     float: left;
     margin: 50px;
+    border: 2px solid black;
 }
 
 .who-text{
