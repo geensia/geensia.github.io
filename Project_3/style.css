@@ -1,0 +1,179 @@
+/* Global Styles 
+------------------------------------------------------------------*/
+body{
+    margin: 0;
+    background-color: #fbfaf3;
+}
+
+
+
+/* Header & Hero Styles 
+------------------------------------------------------------------*/
+.header {
+    overflow: hidden;
+    background-color: #637a6a;
+    padding: 20px 10px;
+}
+
+.header a{
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.header a:hover{
+    background-color: gold;
+    color: black;
+}
+
+.hero-image{
+    background-image: url(Images/XK_Background.png);
+    padding: 300px;
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-text{
+    text-align: center;
+}
+
+.hero-text h1{
+    font-size: 60px;
+}
+
+.header-right{
+    float: right;
+}
+
+@media screen and (max-width: 500px){
+    .header a{
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .header-right{
+        float: none;
+    }
+
+    .hero-text{
+        float: none;
+        text-align: center;
+    }
+
+    .container{
+        float: none;
+        text-align: center;
+    }
+}
+
+
+/* Quote Styles 
+------------------------------------------------------------------*/
+.quote{
+    margin: 0;
+    padding: 5rem 10rem;
+    background-size: cover;
+    position: relative;
+    border: 5px dotted green;
+}
+
+.quote h1{
+    font-size: 35px;
+    text-align: center;
+    padding: 5% 5%;
+    background-color: blueviolet;
+}
+
+.text-wrap{
+    width: 800px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+
+
+/* Shelves Styles 
+------------------------------------------------------------------*/
+.shelves-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: 1 fr 1fr; */
+    background-color: #637a6a;
+    padding: 10px;
+}
+
+.shelves-item{
+    background-color: pink;
+    border: 1px solid yellow;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.shelves-item img{
+    width: 200px;
+    height: 200px;
+}
+
+
+
+
+
+/* Who We Are Styles 
+------------------------------------------------------------------*/
+.container{
+    width: 50%;
+    margin: 0 auto;
+    border: 5px solid black;
+    overflow: hidden;
+}
+
+.sign{
+    float: left;
+    margin: 50px;
+}
+
+.who-text{
+    text-align: center;
+    padding: 50px 0;
+}
+
+
+
+
+
+/* Footer Styles 
+------------------------------------------------------------------*/
+footer {
+    background: #637a6a;
+    color: #F7FFF7;
+    text-align: center;
+  }
+  
+.navigation {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+.navigation a {
+    padding: 15px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+  }
+
+  .content-wrap {
+    width: 800px;
+    margin: 0 auto;
+    padding: 60px 0;
+  }
