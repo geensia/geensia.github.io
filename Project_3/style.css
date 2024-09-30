@@ -77,17 +77,14 @@ body{
 
     /* Quote */
     .text-wrap{
-        width: 40%;
+        width: 50%;
         margin: 0 auto;
         padding: 3vh 0;
     }
 
     .quote {
         margin: 3%;
-    }
-
-    .quote h1{
-        font-size: 300%;
+        float: none;
         text-align: center;
     }
 
@@ -99,15 +96,6 @@ body{
     /* Who We Are */
     .container{
         float: none;
-        text-align: center;
-        width: 50%;
-        margin: 0 auto;
-        overflow: hidden;
-    }
-
-    .sign{
-        float: left;
-        margin: 5%;
     }
 
     /* Footer */
