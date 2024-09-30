@@ -59,6 +59,7 @@ body{
 }
 
 @media screen and (max-width: 500px){
+    /* Header & Hero */
     .header a{
         float: none;
         display: block;
@@ -74,13 +75,46 @@ body{
         text-align: center;
     }
 
-    .container{
-        float: none;
+    /* Quote */
+    .text-wrap{
+        width: 40%;
+        margin: 0 auto;
+        padding: 3vh 0;
+    }
+
+    .quote {
+        margin: 3%;
+    }
+
+    .quote h1{
+        font-size: 300%;
         text-align: center;
     }
 
+    /* Shelves */
     .shelves-container {
         grid-template-columns: repeat(2, 1); /*kelsey edit */
+    }
+
+    /* Who We Are */
+    .container{
+        float: none;
+        text-align: center;
+        width: 50%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .sign{
+        float: left;
+        margin: 5%;
+    }
+
+    /* Footer */
+    .content-wrap{
+        width: 20%;
+        margin: 0 auto;
+        padding: 3%;
     }
 
 }
@@ -89,15 +123,15 @@ body{
 /* Quote Styles 
 ------------------------------------------------------------------*/
 .quote{
-    margin: 0;
+    margin: 3%;
     padding: 5rem 10rem;
     background-size: cover;
     position: relative;
-    border: 5px dotted green;
+    border: .75vh dotted green;
 }
 
 .quote h1{
-    font-size: 45px;
+    font-size: 300%;
     text-align: center;
     padding: 5% 5%;
     background-color:#637a6a;
@@ -105,9 +139,9 @@ body{
 }
 
 .text-wrap{
-    width: 800px;
+    width: 40%;
     margin: 0 auto;
-    padding: 60px 0;
+    padding: 3vh 0;
 }
 
 
@@ -116,22 +150,22 @@ body{
 ------------------------------------------------------------------*/
 .shelves-container{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     background-color: #637a6a;
     padding: 10px;
 }
 
 .shelves-item{
     background-color: #EADDCA;
-    border: 1px solid #007200;
-    padding: 20px;
-    font-size: 30px;
+    border: 1vh solid #007200;
+    padding: 5%;
+    /* font-size: 30px; */
     text-align: center;
 }
 
 .shelves-item img{
-    width: 200px;
-    height: 200px;
+    width: 50%;
+    height: 100%;
 }
 
 
@@ -149,8 +183,8 @@ body{
 
 .sign{
     float: left;
-    margin: 50px;
-    border: 2px solid black;
+    margin: 5%;
+    border: 0.6vh solid black;
 }
 
 .who-text{
@@ -185,7 +219,7 @@ footer {
   }
 
   .content-wrap {
-    width: 800px;
+    width: 20%;
     margin: 0 auto;
-    padding: 60px 0;
+    padding: 3%;
   }
