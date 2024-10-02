@@ -76,16 +76,9 @@ body{
     }
 
     /* Quote */
-    .text-wrap{
-        width: 50%;
-        margin: 0 auto;
-        padding: 3vh 0;
-    }
-
-    .quote {
-        margin: 3%;
-        float: none;
-        text-align: center;
+    .quote h1 {
+        background-color:#637a6a;
+        font-size: 2em;
     }
 
     /* Shelves */
@@ -119,7 +112,7 @@ body{
 }
 
 .quote h1{
-    font-size: 300%;
+    font-size: 2em;
     text-align: center;
     padding: 5% 5%;
     background-color:#637a6a;
