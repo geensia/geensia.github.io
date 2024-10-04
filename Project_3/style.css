@@ -97,6 +97,10 @@ body{
         margin: 0 auto;
         padding: 3%;
     }
+    /* .footer__list img{
+        width: 5em;
+        height: 5em;
+    } */
 
 }
 
@@ -166,6 +170,8 @@ body{
     float: left;
     margin: 5%;
     border: 0.6vh solid black;
+    width: 50%;
+    height: 50%;
 }
 
 .who-text{
@@ -179,7 +185,7 @@ body{
 
 /* Footer Styles 
 ------------------------------------------------------------------*/
-footer {
+/* footer {
     background: #637a6a;
     color: #F7FFF7;
     text-align: center;
@@ -203,4 +209,33 @@ footer {
     width: 20%;
     margin: 0 auto;
     padding: 3%;
+  } */
+
+
+  footer {
+    background: #637a6a;
+    color: #F7FFF7;
+    text-align: center;
+    padding: 5% 5%;
+  }
+
+  footer h2 {
+    padding: 5%;
+  }
+
+  .content-wrap {
+    display: flex;
+    justify-content: center;
+    column-gap: 10%;
+  }
+  
+  .footer__headline {
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .footer__list {
+    list-style: none;
+    padding: 3%;
+    margin: 0;
   }
