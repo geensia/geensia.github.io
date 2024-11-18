@@ -1,0 +1,210 @@
+/* UNIVERSAL
+------------------------------------------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F8D45A;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+}
+
+.green-container {
+  margin: 2% 10%;
+  padding: 2%;
+  background-color: #043927;
+}
+
+
+
+
+/* HEADER
+------------------------------------------------------------ */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5%;
+  background-color: #043927;
+  margin: 2% 10%;
+}
+
+.logo img {
+  height: 50%;
+  width: 60%;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ddd;
+}
+
+
+
+/* HOME PAGE - WELCOME CONTENT
+------------------------------------------------------------ */
+.welcome-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 2% 10%;
+  padding: 2%;
+  background-color: #043927;
+}
+
+/* HOME PAGE - SLIDESHOW
+------------------------------------------------------------ */
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  padding: 0% 0% 0% 50%;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+/* HOME PAGE - WELCOME TEXT
+------------------------------------------------------------ */
+.welcome-text {
+  padding: 0% 0% 0% 15%;
+}
+
+
+
+/* ABOUT PAGE
+------------------------------------------------------------ */
+.about-container {
+  margin: 2% 10%;
+  padding: 2%;
+  background-color: #043927;
+  text-align: center;
+}
+
+.about-text {
+  text-align: justify;
+  padding-top: 2%;
+}
+
+.about-text ul {
+  margin-left: 2%;
+}
+
+.about-container h1 {
+  padding-bottom: 2%;
+}
+
+
+
+/* FOOTER
+------------------------------------------------------------ */
+.footer {
+  color: black;
+  margin: 2% 10%;
+  padding: 2%;
+  text-align: center;
+}
+
+
+
+/* CONTACT PAGE
+------------------------------------------------------------ */
+.contact-header {
+  text-align: center;
+}
