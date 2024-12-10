@@ -13,3 +13,13 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block";
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
+
+
+// Select the hamburger menu and navigation links
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+// Toggle the active class on the navigation menu
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
