@@ -1,25 +1,31 @@
-// HOME PAGE - SLIDESHOW
-let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  const slides = document.querySelectorAll(".slide");
-  slides.forEach(slide => (slide.style.display = "none"));
-
-  slideIndex++;
-  if (slideIndex > slides.length) {
-    slideIndex = 1;
+document.getElementById('add-btn').addEventListener('click', function() {
+    const taskInput = document.getElementById('task-input');
+    const taskText = taskInput.value.trim();
+  
+    if (taskText === '') {
+      alert('Please enter a task.');
+      return;
+    }
+  
+    const todoList = document.getElementById('todo-list');
+    const newTask = createTaskElement(taskText);
+    todoList.appendChild(newTask);
+  
+    taskInput.value = '';
+  });
+  
+  function createTaskElement(taskText) {
+    const li = document.createElement('li');
+    li.textContent = taskText;
+  
+    const doneButton = document.createElement('button');
+    doneButton.textContent = 'Done';
+    doneButton.addEventListener('click', function() {
+      const doneList = document.getElementById('done-list');
+      doneList.appendChild(li);
+      li.removeChild(doneButton);
+    });
+  
+    li.appendChild(doneButton);
+    return li;
   }
-  slides[slideIndex - 1].style.display = "block";
-
-  setTimeout(showSlides, 3000); // Change image every 3 seconds
-}
-
-// Select the hamburger menu and navigation links
-const hamburger = document.querySelector('.hamburger');
-const navLinks = document.querySelector('.nav-links');
-
-// Toggle the active class on the navigation menu
-hamburger.addEventListener('click', () => {
-  navLinks.classList.toggle('active');
-});

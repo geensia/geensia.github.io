@@ -10,7 +10,18 @@ body {
   background-color: #F8D45A;
   font-family: "Times New Roman", Times, serif;
   color: white;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
 
 .green-container {
   margin: 2% 10%;
@@ -20,6 +31,10 @@ body {
 
 h1 {
   font-size: 7vh;
+}
+
+p {
+  font-size: 18px;
 }
 
 @media (max-width: 786px) {
@@ -108,12 +123,12 @@ h1 {
   height: auto;
 }
 
-/* Responsive Design */
+/* Responsive Design - Credit to ChatGPT for this responsive part*/ 
 /* For tablets and smaller screens */
 @media screen and (max-width: 768px) {
   .welcome-content {
     flex-direction: column; /* Stack items vertically */
-    text-align: center; /* Center-align text for better aesthetics */
+    text-align: left; /* Center-align text for better aesthetics */
     margin: 5%;
     padding: 5%;
   }
@@ -211,6 +226,11 @@ h1 {
   cursor: pointer;
 }
 
+.green-container a {
+  color: #F8D45A;
+  text-decoration: none;
+}
+
 @media (max-width: 786px) {
   .plan-grid {
     grid-template-columns: 1fr;
@@ -287,10 +307,11 @@ h1 {
 /* FOOTER
 ------------------------------------------------------------ */
 .footer {
+  background-color: #F8D45A;
   color: black;
-  margin: 2% 10%;
-  padding: 2%;
   text-align: center;
+  padding: 10px;
+  font-size: 14px;
 }
 
 
@@ -394,3 +415,4 @@ button:hover {
   /* Unable to get form box to be centered? */
 
 }
+
