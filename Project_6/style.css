@@ -94,100 +94,56 @@ h1 {
 ------------------------------------------------------------ */
 .welcome-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin: 2% 10%;
   padding: 2%;
   background-color: #043927;
-}
-
-/* HOME PAGE - SLIDESHOW
------------------------------------------------------------- */
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-  padding: 0% 0% 0% 50%;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
   color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+  align-items: center;
 }
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
+.welcome-content img {
+  max-width: 500px;
   width: 100%;
-  text-align: center;
+  height: auto;
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+/* Responsive Design */
+/* For tablets and smaller screens */
+@media screen and (max-width: 768px) {
+  .welcome-content {
+    flex-direction: column; /* Stack items vertically */
+    text-align: center; /* Center-align text for better aesthetics */
+    margin: 5%;
+    padding: 5%;
+  }
+
+  .welcome-content img {
+    max-width: 100%; /* Full width of the container */
+    margin-bottom: 20px; /* Add spacing between the image and text */
+  }
+
+  .welcome-text {
+    padding: 0; /* Remove left padding */
+  }
 }
 
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+/* For very small screens like phones */
+@media screen and (max-width: 480px) {
+  .welcome-text h1 {
+    font-size: 1.5rem; /* Adjust heading size */
+  }
+
+  .welcome-text p {
+    font-size: 0.9rem; /* Adjust paragraph size */
+  }
+
+  .welcome-content {
+    margin: 3%; /* Reduce margins for smaller screens */
+    padding: 3%;
+  }
 }
 
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
 
 
 
