@@ -29,6 +29,7 @@ body{
 
 
 
+
 /* Header 
 -------------------------------------------------------------------------------------*/
 .header {
@@ -123,6 +124,7 @@ body{
 -------------------------------------------------------------------------------------*/
 .recent-container {
   text-align: center;
+  padding-bottom: 40px;
 }
 
 .recent-container h2 {
@@ -257,7 +259,7 @@ body{
 /* Credit to this video for the lines (https://youtu.be/57JeRBZMbiE?si=4J1I0c8wV9lDYaXG) 
 Look at this video if want to do line under title (https://www.youtube.com/watch?v=tqnL_rPtl3A)*/
 .title h1 {
-  margin: 65px auto;
+  margin: 65px auto 20px auto;
   text-align: center;
   max-width: 600px;
   position: relative;
@@ -286,4 +288,12 @@ Look at this video if want to do line under title (https://www.youtube.com/watch
   right: 0;
   top: 50%;
   z-index: -2;
+}
+
+.main-container {
+  margin: 0 10%;
+}
+
+.main-container p {
+  padding: 10px 0;
 }
