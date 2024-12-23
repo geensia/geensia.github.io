@@ -10,6 +10,9 @@ body{
   background-color: #EAE6E1;
   font-family: Noto Serif;
   /* font-family: DM Serif Display; */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .dm-serif-display-regular {
@@ -72,6 +75,16 @@ body{
     }
   }
 
+
+/* FOOTER 
+-------------------------------------------------------------------------------------*/
+.footer {
+  background-color: #818B7E;
+  text-align: center;
+  padding: 25px;
+  color: white;
+  margin-top: auto;
+}
 
 
 /* ME CONTENT 
