@@ -108,6 +108,10 @@ body{
 
 /* RECENT WORKS CONTENT
 -------------------------------------------------------------------------------------*/
+.recent-container {
+  text-align: center;
+}
+
 .recent-container h2 {
   font-style: italic;
   padding-top: 10%;
@@ -122,6 +126,7 @@ body{
   text-align: center;
   gap: 20px;
   margin: 20px 10%;
+  padding-bottom: 15px;
 
  justify-items: center;
 }
@@ -200,6 +205,24 @@ body{
   font-size: 30px;
   margin: 0;
   text-align: center;
+}
+
+.recent-btn {
+  display: inline-block;
+  background-color: #A74D4A;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  font-size: 16px;
+  border-radius: 5px; /* Optional for rounded corners */
+  cursor: pointer;
+  margin-top: 20px;   /* Add spacing from the previous section */
+  transition-duration: 0.4s;
+}
+
+.recent-btn:hover {
+  background-color: grey;
+  opacity: 1;
 }
 
 
