@@ -327,8 +327,48 @@ Look at this video if want to do line under title (https://www.youtube.com/watch
 -------------------------------------------------------------------------------------*/
 .contact-container {
   text-align: center;
-  padding: 10%;
+  padding: 40px 10px;
   margin: 0 25%;
   border-radius: 10px;
-  border: 3px solid #cfcac4;
+  /* border: 3px solid #cfcac4; */
+  justify-content: center;
+  position: relative;
+  font-size: 18px;
+}
+
+.contact-text {
+  font-size: 35px;
+}
+
+.contact-container h3 {
+  font-size: 30px;
+}
+
+.icons {
+  padding-top: 70px;
+  justify-content: center;
+}
+
+.email img{
+  width:15%;
+  padding-bottom: 20px;
+}
+
+.linkedin img{
+  padding-top: 30px;
+  width: 20%;
+}
+
+
+@media screen and (max-width: 600px) {
+  
+  .contact-text {
+    font-size: 25px;
+  }
+
+  .email {
+    width: 100%;
+    padding-bottom: 0px;
+  }
+
 }
