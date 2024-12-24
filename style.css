@@ -65,6 +65,7 @@ Look at this video if want to do line under title (https://www.youtube.com/watch
 
 
 
+
 /* Header 
 -------------------------------------------------------------------------------------*/
 .header {
@@ -184,7 +185,8 @@ Look at this video if want to do line under title (https://www.youtube.com/watch
 .card {
   position: relative;
   cursor: pointer;
-  border: 2px solid hotpink;
+  border-radius: 10px;
+  border: 2px solid white;
   overflow: hidden;
   width: 100%;
 }
@@ -299,8 +301,8 @@ Look at this video if want to do line under title (https://www.youtube.com/watch
   padding: 10px 0;
 }
 
-.geensia-flower-img {
-  width: 15%;
+.about-profile {
+  width: 18%;
   height: auto;
   display: block;
   margin-left: auto;
@@ -309,12 +311,24 @@ Look at this video if want to do line under title (https://www.youtube.com/watch
   border: 5px solid white;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
   
-  .geensia-flower-img {
-    width: 40%;
-    height: 40%;
+  .about-profile {
+    width: 50%;
+    height: 50%;
   }
 
 
+}
+
+
+
+/* CONTACT PAGE
+-------------------------------------------------------------------------------------*/
+.contact-container {
+  text-align: center;
+  padding: 10%;
+  margin: 0 25%;
+  border-radius: 10px;
+  border: 3px solid #cfcac4;
 }
