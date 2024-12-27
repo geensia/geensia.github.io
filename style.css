@@ -300,6 +300,65 @@ Look at this video if want to do line under title (https://www.youtube.com/watch
 }
 
 
+
+/* WORKS PAGE
+-------------------------------------------------------------------------------------*/
+#projects-grid{
+  display: grid;
+  border: 3px solid black;
+  max-width: 960px;
+  grid-template-columns: 1fr 1fr 1fr; /* question: what does fr mean? answer: fraction*/
+  grid-template-rows: auto; /*adjust rows according to screen*/
+  grid-column-gap: 10px;
+  grid-row-gap: 15px; 
+  margin: 20px auto;
+  justify-content: center;
+  background: rgba(102, 119, 59, 0.5);  
+  /* play with color */
+  
+}
+
+#page_title{
+  grid-column: 1/4;
+  text-align: center;
+  max-width: 100%;
+  padding: 40px 0px;
+}
+ 
+.project_item {
+  display: grid;  /* we have a grid inside a grid here, with each item as its own grid */
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr 2fr;
+  grid-template-areas:
+  "image number"
+  "image title"
+  "image description";
+  grid-column-gap: 15px;
+  align-items: center;
+  /* background: rgba(232, 232, 231, 0.5);  */ /*  play with color*/
+}
+
+.project_image { 
+  grid-area: image;
+  margin: 0 auto; 
+}
+.project_number { 
+  grid-area: number; 
+}
+.project_title { 
+  grid-area: title; 
+}
+.project-description { 
+  grid-area: description; 
+}
+
+
+
+
+
+
+
+
 /* ABOUT PAGE
 -------------------------------------------------------------------------------------*/
 .main-container {
