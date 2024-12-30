@@ -309,32 +309,50 @@ Look at this video if want to do line under title (https://www.youtube.com/watch
   justify-content: center;
   align-items: center;
   padding: 30px ;
- }
+}
 
- .work-grid {
+.work-grid {
   width: 85%;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap:30px;
- }
+}
 
- .work-card {
+.work-card {
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
- }
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
- .work-card img {
+.work-card:hover {
+  transform: translateY(-10px); /* Moves the card up by 10px */
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3); /* Optional: Enhance shadow for hover effect */
+}
+
+.work-card img {
   max-width: 100%;
-  height:auto;
+  height: auto;
   border-radius: 5px 5px 0 0;
- }
+}
 
- .work-content {
+.work-content {
   padding: 20px;
- }
+}
 
+.project-name {
+  color: grey;
+  font-style: italic;
+}
+
+.work-title {
+  margin: 40px auto 20px auto;
+  text-align: center;
+  max-width: 600px;
+  position: relative;
+  font-size: 20px;
+}
 
 
 
