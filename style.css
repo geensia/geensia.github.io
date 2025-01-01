@@ -355,6 +355,27 @@ Look at this video if want to do line under title (https://www.youtube.com/watch
 }
 
 
+.work-btn {
+  background-color: #A74D4A;
+  border: none;
+  border-radius: 5px;
+  color:white;
+  padding: 15px 32px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 20px auto;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+
+.work-btn:hover {
+  background-color: #818B7E; 
+  color: #ffffff; 
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
 
 
 
