@@ -375,6 +375,13 @@ Look at this video if want to do line under title (https://www.youtube.com/watch
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+@media screen and (max-width: 768px) {
+  .work-grid {
+    grid-template-columns: 1fr; /* One column layout */
+    grid-gap: 20px; /* Adjust spacing between cards if needed */
+  }
+}
+
 
 
 
