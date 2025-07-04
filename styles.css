@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f7f0e4;
+    font-family: Noto Serif, serif;
+    color: black;
+}
+
+.wrapper {  /* new flex container that wraps existing content, with colum orientation */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Minimum height of the wrappered content is 100% of current browser viewport height */
+}
+
+
+/* NAVIGATION ---------------------------------------------------------------------------*/
+.split-nav-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-top: 0.5em 2em;
+    padding-right: 2em;
+    padding-left: 1em;
+    gap: 1em;
+    align-items: center;
+}
+
+.push {
+    margin-right: auto;
+}
+
+nav a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 0.5em;
+    color:black;
+    font-size: 1.1em;
+}
+
+.logo {
+  height: clamp(60px, 10vh, 120px);
+  width: auto;
+  display: block;
+}
+
+@media (min-width: 600px) {
+    .split-nav-container {
+        flex-direction: row;
+    }
+}
+
+
+/* INDEX - MAIN BODY ---------------------------------------------------------------------------*/
+.me_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 85vh;
+  /* padding: 5% 0 8% 0; */
+  padding-bottom: 5em;
+}
+
+.me_container {
+  /* margin: 20px auto; */
+  width: 75%;
+  padding-top: 40px;
+}
+
+.bio_photo {
+  max-width: 600px;
+  max-height: 500px;
+  float: left;
+  border-radius: 10px;
+  margin-right: 50px;
+  box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.5);
+  /* width: 25%;
+  height: 20%; */
+}
+
+.me_content h1 {
+  font-size: 6em;
+}
+
+.me_content p {
+    font-size: 1.8em;
+}
+
+.me_content {
+    padding: 50% auto;
+}
+
+@media (max-width: 600px) {
+    .bio_photo {
+        width: 100%;
+    }
+
+    .me_content h1 {
+        font-size: 3em;
+    }
+
+    .me_content p {
+        font-size: 2em;
+    }
+
+}
+
+
+
+
+/* ABOUT ME PAGE ---------------------------------------------------------------------------*/
+.page-title {
+    font-size: 20px;
+    text-align: center;
+    padding: 4em 0 1.5em 0;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: .5em;
+  }
+
+.content-wrapper section{
+    margin: 3em;
+}
+
+.content-wrapper section p {
+    font-size: 1em;
+    padding: 0.5em 0;
+}
+
+.about-me-img {
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid #ae8f80;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 600px) {
+    .content-wrapper { 
+        flex-direction: row; 
+        margin: 0 3em 5em 3em;
+    }
+
+    aside { 
+        flex: 1; 
+    }
+
+    .content-wrapper section { 
+        flex: 2; 
+    }
+
+    .about-me-img {
+        width: 80%
+    }
+
+    .content-wrapper section{
+        margin: 0;
+    }
+}
+
+
+/* WORK PAGE ---------------------------------------------------------------------------*/
+.work-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px ;
+}
+
+.work-grid {
+  width: 85%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap:30px;
+}
+
+.work-card {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work-card:hover {
+  transform: translateY(-10px); /* Moves the card up by 10px */
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3); /* Optional: Enhance shadow for hover effect */
+}
+
+.work-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px 5px 0 0;
+}
+
+.work-content {
+  padding: 20px;
+}
+
+.project-name {
+  color: grey;
+  font-style: italic;
+}
+
+.view-btn {
+    color: #A74D4A;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.work-title {
+  margin: 40px auto 20px auto;
+  text-align: center;
+  max-width: 600px;
+  position: relative;
+  font-size: 20px;
+}
+
+
+.work-btn {
+  background-color: #A74D4A;
+  border: none;
+  border-radius: 5px;
+  color:white;
+  padding: 15px 32px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 20px auto;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+
+.work-btn:hover {
+  background-color: #818B7E; 
+  color: #ffffff; 
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .work-grid {
+    grid-template-columns: 1fr; /* One column layout */
+    grid-gap: 20px; /* Adjust spacing between cards if needed */
+  }
+}
+
+
+
+
+/* old code below
+
+.work-wrapper {
+    margin: 3em;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+}
+
+.card {
+    margin: 1em;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.card a {
+    text-decoration: none;
+    color:black;
+}
+
+@media (min-width: 600px) {
+    .work-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+#info1, #info2, #info3, #info4 {
+    display: none;
+}
+
+#moreLess1 {
+    color: black;
+}
+
+#moreLess2 {
+    color: black;
+}
+
+#moreLess3 {
+    color: black;
+}
+
+#moreLess4 {
+    color: black;
+} */
+
+
+/* FOOTER ---------------------------------------------------------------------------*/
+footer {
+    background-color:#004838;
+    color:white;
+    padding: 1em;
+    text-align: center;
+}

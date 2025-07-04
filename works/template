@@ -33,43 +33,40 @@
             <div class="work-grid">
             
                 <div class="work-card">
-                    <a href="https://drive.google.com/file/d/1M59gYTcuAtL-rUoeSIysjiJxWrmfejis/view?usp=sharing" target="_blank"><img src="../img/COMM130/COMM130_PRJ1.png" alt=""></a>
+                    <a href="#" target="_blank"><img src="../img/COMM130/COMM130_PRJ1.png" alt=""></a>
                     <div class="work-content">
                         <h3>Project #1</h3>
-                        <p class="project-name">Light Journal</p>
+                        <p class="project-name">Name</p>
                         <p>
-                            In this project, I used the Canon XA50 to capture different scenes of lights.
+                            Description
                         </p>
-                        <p><i>*Note: there is no audio*</i></p>
-                        <a href="https://drive.google.com/file/d/1M59gYTcuAtL-rUoeSIysjiJxWrmfejis/view?usp=sharing" target="_blank" class="view-btn">View</a>
+                        <a href="#" target="_blank" class="view-btn">View</a>
                     </div>
                 </div>
 
                 <div class="work-card">
-                    <a href="https://drive.google.com/file/d/1vX5b0eSOG7WHJJ0Plj7ypufd3-9xmWOO/view?usp=sharing" target="_blank"><img src="../img/COMM130/COMM130_PRJ2.png" alt=""></a>
+                    <a href="#" target="_blank"><img src="../img/COMM130/COMM130_PRJ1.png" alt=""></a>
                     <div class="work-content">
                         <h3>Project #2</h3>
-                        <p class="project-name">Sound Journal</p>
+                        <p class="project-name">Name</p>
                         <p>
-                            Using the Light Journal project, I recorded my own sounds with the Zoom H4n to make the video more
-                            dynamic.
+                            Description
                         </p>
-                        <a href="https://drive.google.com/file/d/1vX5b0eSOG7WHJJ0Plj7ypufd3-9xmWOO/view?usp=sharing" target="_blank" class="view-btn">View</a>
+                        <a href="#" target="_blank" class="view-btn">View</a>
                     </div>
                 </div>
 
                 <div class="work-card">
-                    <a href="https://drive.google.com/file/d/16sCguQdikwxLqc92hM4lNmzkXwB5fUEC/view?usp=sharing" target="_blank"><img src="../img/COMM130/COMM130_PRJ3.png" alt=""></a>
+                    <a href="#" target="_blank"><img src="../img/COMM130/COMM130_PRJ1.png" alt=""></a>
                     <div class="work-content">
                         <h3>Project #3</h3>
-                        <p class="project-name">Portrait of a Person</p>
+                        <p class="project-name">Name</p>
                         <p>
-                            For my final project, I created a video of my mom's daily life while she talks about her life
+                            Description
                         </p>
-                        <a href="https://drive.google.com/file/d/16sCguQdikwxLqc92hM4lNmzkXwB5fUEC/view?usp=sharing" target="_blank" class="view-btn">View</a>
+                        <a href="#" target="_blank" class="view-btn">View</a>
                     </div>
                 </div>
-
 
             </div>
 
