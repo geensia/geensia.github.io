@@ -4,78 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - Geensia Xiong</title>
+    <link rel="icon" type="image/png" href="/img/favicon.png">
     
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="img/favicon.png">
 
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=DM+Serif+Display:ital@0;1&family=Noto+Serif+Todhri&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=DM+Serif+Display:ital@0;1&family=Noto+Serif+Todhri&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
 
-    <!-- wrapper for entire page -->
-    <div class="wrapper"> 
+    <body>
+        <nav>
 
-        <nav class="split-nav-container">
-            <a class="push" href="index.html"><img src="img/logo.png" alt="Create With Geensia" class="logo"></a>
-            <a href="work.html">Works</a>
-            <a href="about.html">About</a>
-            <a href="mailto:geensiax@gmail.com">Contact</a>
+            <div class="logo">
+            <a href="index.html">
+                <img src="img/logo.png" alt="logo for geensia" class="logo-img">
+            </a>
+            </div>
+
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="my-portfolio.html">My Portfolio</a></li>
+                <!-- <li><a href="#">Web & Design</a></li>
+                <li><a href="#">Visual Media</a></li>
+                <li><a href="#">Marketing & Content</a></li> -->
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
         </nav>
 
-        <div class="page-title">
-            <h1>About Me</h1>
-        </div>
-
-        <div class="content-wrapper">
-
-            <aside>
-            <img src="img/geensia-leaf.jpeg" alt="geensia holding a leaf" class="about-me-img">
-            </aside>
-
-            <section>
-                <p>
-                    Growing up, I didn't have the traditional childhood that every child had. I was raised in a small-town Asian market 
-                    owned by my parents called <a href="https://g.co/kgs/6FsTZ9q" target="_blank">Xieng Khouang Market Place</a>. I spent 
-                    almost every day there watching my parents' dedication and the creativity it took to build something meaningful. As I 
-                    entered middle school, I became more involved, taking on responsibilities at the store. At a young age, I learned many 
-                    valuable lessons in hard work and perseverance.
-                </p>
-
-                <p>
-                    I was introduced to web design in high school and that sparked my interest in designing things. There was something 
-                    about turning my ideas into something I could see that blew my mind. 
-                </p>
-
-                <p>
-                    As the years passed by, I wanted to design something for my parents' business, especially since they've expanded 
-                    into the food industry. It has only been recently that I have felt that my skills were good enough for me to produce 
-                    something my parents would like. 
-                </p>
-
-                <p>
-                    At UNC Chapel Hill, I've embraced the new creative opportunities that extended beyond web design. My academic journey 
-                    has introduced me to fields like accessibility, digital marketing, and photography. Each of these areas has taught me 
-                    to create and think about the user-centered experience.
-                </p>
-
-                <p>
-                    I am open to new opportunities, especially in web design, new media, and digital marketing. Whether it's creating something 
-                    meaningful or learning a new skill, I love exploring what's possible.
-                </p>
-
-                <p>You can check out my <a href="https://www.linkedin.com/in/geensia-xiong/" target="_blank">LinkedIn</a> to stay updated with me!</p>
-                
-            </section>
-
+        <div class="bio-wrapper">
+            <div class="bio-container">
+                <img src="img/geensia-about.webp" class="bio-photo" alt="Geensia in front of Zinchouse">
+                <div class="bio-content story-card"> <h1>About Geensia</h1>
+                    <p><b>Name:</b> Geensia Xiong</p>
+                    <p><b>Pronunciation:</b> Jen-Shia Zong</p>
+                    <p><b>Pronouns:</b> she/her</p>
+                    <p><b>Education:</b> B.S. in Information Science, B.A. in Communication (New Media), & Studio Arts minor</p>
+                    <p><b>Fun Fact:</b> In the summer, I help teach the Hmong language to kids from K-12!</p>
+                </div>
+            </div>
         </div>
 
 
-        <footer>© Geensia Xiong 2025</footer>
+        <section class="story-wrapper">
+            <div class="story-container">
+                <div class="story-card">
+                    <h2>My Story</h2>
+                    <p>
+                        Hi, I’m <b>Geensia</b> — a Hmong digital designer and communicator who wants to help bring ideas to life.
+                    </p>
+                    <p>
+                        Growing up, I didn’t have a traditional childhood. Instead, I grew up in my parents’ 
+                        small Asian market in Valdese, North Carolina. Because I was often there, I grew an 
+                        interest in <b>helping people understand things.</b> Whether it was explaining how technology 
+                        works to my parents, designing a simple menu for customers, or finding ways to explain 
+                        complex information, I enjoyed being the bridge between information and people. That 
+                        passion grew with me over the years and I realized I could make a career out of it. 
+                    </p>
+                    <p>
+                        I recently graduated from the <b>University of North Carolina at Chapel Hill with a B.S. 
+                        in Information Science, a B.A. in Communication (New Media), and a minor in Studio Arts.</b> 
+                        Across these areas, I’ve learned how to combine technology, communication, and design to 
+                        turn ideas into experiences that are both creative and easy to understand.
+                    </p>
+                    <p>
+                        Through my work, I hope to help others better understand the ideas around them.
+                    </p>
+                </div>
+            </div>
+        </section>
+ 
 
 
-    </div>
+        <footer>© Geensia Xiong 2026. All rights reserved.</footer>
 
-
+        <script src="script.js"></script>
+    </body>
 </html>
