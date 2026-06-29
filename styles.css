@@ -456,6 +456,55 @@ nav {
   box-shadow: 0 4px 10px rgba(62, 91, 82, 0.15);
 }
 
+/* PORTFOLIO FILTERS BUTTONS */
+.portfolio-filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.filter-btn {
+    background: none;
+    border: 1px solid #3E5B52;
+    color: #3E5B52;
+    padding: 0.6rem 1.5rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    border-radius: 50rem;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background-color: #3E5B52;
+    color: white;
+    box-shadow: 0 4px 10px rgba(62, 91, 82, 0.2);
+}
+
+/* CARDS ANIMATION CLASSES */
+.portfolio-card {
+    transition: transform 0.4s ease, opacity 0.4s ease, box-shadow 0.3s ease;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.portfolio-card.hide {
+    opacity: 0;
+    transform: scale(0.8);
+    position: absolute;
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    border: none;
+    overflow: hidden;
+    pointer-events: none;
+}
+
 /* --- MAIN PORTFOLIO RESPONSIVE STYLES --- */
 @media (max-width: 992px) {
   .portfolio-grid {
