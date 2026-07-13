@@ -39,6 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // 3. PORTFOLIO FILTER MECHANICS
     const filterButtons = document.querySelectorAll(".filter-btn");
     const portfolioCards = document.querySelectorAll(".portfolio-card");
+    const comingSoonMessage = document.getElementById("coming-soon-message"); // Grab the message element
 
     filterButtons.forEach(button => {
         button.addEventListener("click", () => {
@@ -47,16 +48,27 @@ document.addEventListener("DOMContentLoaded", () => {
             button.classList.add("active");
 
             const filterValue = button.getAttribute("data-filter");
+            let visibleCardsCount = 0; // Reset counter on each click
 
             portfolioCards.forEach(card => {
                 const cardCategories = card.getAttribute("data-category").split(" ");
 
                 if (filterValue === "all" || cardCategories.includes(filterValue)) {
                     card.classList.remove("hide");
+                    visibleCardsCount++; // Increment if card is shown
                 } else {
                     card.classList.add("hide");
                 }
             });
+
+            // Toggle the coming soon message display based on card visibility
+            if (visibleCardsCount === 0) {
+                comingSoonMessage.style.display = "flex";
+            } else {
+                comingSoonMessage.style.display = "none";
+            }
         });
     });
+
+    
 });
