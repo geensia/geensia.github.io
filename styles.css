@@ -735,8 +735,8 @@ nav {
 
 .gallery-item img {
     width: 100%;
-    height: 300px;
-    object-fit: cover;
+    height: auto;
+    object-fit: contain;
     border-radius: 8px;
     border: 1px solid #E1E8F5;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
@@ -753,6 +753,46 @@ nav {
     line-height: 1.4;
     font-weight: 400;
     padding: 0 4px;
+}
+
+.gallery-item a {
+    text-decoration: none;
+    color: 	#088F8F;
+}
+
+.gallery-item a:hover {
+    text-decoration: underline;
+    color: #0d5454;
+}
+
+/* VIDEO UNDER PROJECT DELIVERABLES*/
+.gallery-video-item {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 9 / 16;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #E1E8F5;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    background-color: #000;
+}
+
+.video-container iframe,
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    object-fit: contain;
 }
 
 /* INTERACTIVE LIGHTBOX OVERLAY POPUP SYSTEM */
@@ -828,6 +868,15 @@ nav {
     .project-meta-grid::before,
     .project-meta-grid::after {
         width: 100%;
+    }
+
+    .gallery-video-item {
+        max-width: 320px; 
+        margin: 0 auto;
+    }
+
+    .video-container {
+        max-height: 480px; 
     }
 }
 
